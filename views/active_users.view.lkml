@@ -120,6 +120,11 @@ view: active_users {
     sql: ${TABLE}.zipcode ;;
   }
 
+  dimension: custom_field {
+    type:  string
+    sql: concat(${member_id}, " ", ${associate_id}) ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [id, transactions.transaction_id]
