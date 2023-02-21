@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <iframe
+          title="looker"
+          src="https://digitalnonprodlooker.cloud.looker.com/embed/dashboards/87?Tipo+de+Cliente%E2%80%8B=&Fecha+Inicio%E2%80%8B+-+Fecha+Fin%E2%80%8B=2022%2F10%2F01+to+2022%2F11%2F01"
+          width="80%"
+          height="1000px"
+          frameBorder="0"
+        />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
